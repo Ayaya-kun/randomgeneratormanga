@@ -1,0 +1,18 @@
+<javascript>
+const axios = require("axios");
+
+const options = {
+  method: 'POST',
+  url: 'https://anilist-graphql.p.rapidapi.com/',
+  headers: {
+    'X-RapidAPI-Key': '4d9ec10a5amsh9dc2bd8e1afcdb5p12d5f6jsn6fc5fd8b5e25',
+    'X-RapidAPI-Host': 'anilist-graphql.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+</javascript>
